@@ -11,15 +11,24 @@ Pour installer le compilateur, il faut télécharger le fichier `Compilateur_Lin
 `/usr/bin/`. Ensuite, il faut donner les droits d’exécution au fichier avec la
 commande `chmod +x /usr/bin/Compilateur_Linux.bash`.
 Pour vérifier que le compilateur est bien installé, il faut taper la commande `Compilateur_Linux.bash` dans le terminal.
-Si
-le compilateur est bien installé, il affichera une erreur, car il n’y a pas de fichier à compiler.
+Si le compilateur est bien installé, if affichera les options disponibles.
+
+Pour installer les dependence, il faut taper la commande `Compilateur_Linux.bash -i` dans le terminal.
 
 ## Utilisation
 
-Pour utiliser le compilateur, il faut taper la commande `Compilateur_Linux.bash <fichier>` dans le terminal. Le fichier
-doit être un fichier source. Le compilateur va compiler le fichier et créer un fichier exécutable. Le nom du fichier
-exécutable est le même que le fichier source. Si le fichier source contient une erreur, le
-compilateur affichera l’erreur et ne créera pas le fichier exécutable.
+On peut connaître la version du compilateur en tapant la commande `Compilateur_Linux.bash -v` dans le terminal.
+
+On peut connaître les options disponibles en tapant la commande `Compilateur_Linux.bash -h`
+ou `Compilateur_Linux.bash --help` dans le terminal.
+
+Pour compiler un programme, il faut taper la commande `Compilateur_Linux.bash -c <nom_du_fichier>` dans le terminal.
+Le fichier doit être un fichier source. Le compilateur va compiler le fichier et créer un fichier exécutable. Le nom du
+fichier exécutable est le même que le fichier source. Si le fichier source contient une erreur, le compilateur affichera
+l’erreur et ne créera pas le fichier exécutable.
+
+Pour compiler un programme et l’exécuter, il faut taper la commande `Compilateur_Linux.bash -e <nom_du_fichier>` dans le
+terminal, dans l’ensemble, c’est la même chose que la commande précédente, mais le fichier exécutable est executé.
 
 ## Particularités
 
